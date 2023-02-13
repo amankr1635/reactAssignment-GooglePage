@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Logo from "./components/Logo.js"
+import InputBox from "./components/InputBox.js"
+import SearchButton from "./components/SearchButton"
+import LuckyButton from "./components/LuckyButton"
+import LanguageNotes from "./components/LanguageNotes"
 
-function App() {
+
+
+export default function App(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div style={{marginTop : "50px"}}>
+     <div style={{display: "flex", justifyContent : "center"}}>
+      <Logo/>        
+      </div>
+     <div style={{display:"flex", justifyContent: "center"}} >
+     <InputBox/>
+     </div>
+     <div  style={{display:"flex", justifyContent: "center",padding:"5px",gap: "5px"}}> 
+      <SearchButton/>
+      <LuckyButton/>
+     </div>
+     <div style={{display:"flex", justifyContent: "center"}}>
+    <LanguageNotes/>
+       </div>
     </div>
   );
 }
-
-export default App;
