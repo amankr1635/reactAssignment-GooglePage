@@ -3,7 +3,8 @@ import React from "react"
 function Button(props){
 return (
   <div>
-<button style={{width: "250px",height : "30px"}}>{props.text}</button>
+<input style ={{width:"250px",fontSize: "25px",borderRadius:"7px"}}/>
+
 </div>
 )
 }
